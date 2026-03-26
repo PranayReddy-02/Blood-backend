@@ -1,0 +1,26 @@
+# Standard Java .dockerignore
+target/
+.mvn/
+mvnw
+mvnw.cmd
+.git/
+.gitignore
+.gitattributes
+*.iml
+.idea/
+.vscode/
+bin/
+obj/
+*.log
+Dockerfile
+docker-compose.yml
+HELP.md
+README.md
+API_DOCUMENTATION.md
+ARCHITECTURE.md
+BUILD_AND_RUN.md
+DEPLOYMENT_GUIDE.md
+FILE_INDEX.md
+PROJECT_SUMMARY.md
+QUICKSTART.md
+TESTING_GUIDE.md

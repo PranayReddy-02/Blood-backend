@@ -1,8 +1,5 @@
-# Standard Java .dockerignore
-target/
-.mvn/
-mvnw
-mvnw.cmd
+# Standard Java .dockerignore at repository root
+# Ignore common junk and heavy build artifacts
 .git/
 .gitignore
 .gitattributes
@@ -24,3 +21,9 @@ FILE_INDEX.md
 PROJECT_SUMMARY.md
 QUICKSTART.md
 TESTING_GUIDE.md
+
+# Ignore the target directory inside 'demo/'
+demo/target/
+demo/.mvn/
+demo/mvnw
+demo/mvnw.cmd

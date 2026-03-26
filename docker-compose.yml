@@ -28,12 +28,14 @@ services:
     ports:
       - "8080:8080"
     environment:
-      # These variables can override application-docker.properties
+      # Use locally-defined Spring profile
       - SPRING_PROFILES_ACTIVE=docker
       - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/blood_donor_db
       - SPRING_DATASOURCE_USERNAME=donor_user
       - SPRING_DATASOURCE_PASSWORD=donor_password
       - JAVA_OPTS="-Xms256m -Xmx512m"
+      # For local Docker Compose, set PORT to 8080 if not defined
+      - PORT=8080
     networks:
       - blood-donor-network
 
